@@ -8,17 +8,18 @@ class Game:
 
     def turn(self):
         round_score = 0
+        number_of_rolls = 0
         while True:
             current_roll = self.roll()
+            number_of_rolls += 1
             if current_roll == 1:
                 round_score = 0
                 break
             round_score += current_roll
-            hold = self.player.get_input(round_score)
+            hold = self.player.get_input(round_score, number_of_rolls)
             if hold:
                 break
         return round_score
-
 
     def roll(self):
         return random.randint(1, 6)
