@@ -1,4 +1,5 @@
 import random
+from player import Player, Roll_Stop_Player, Score_Stop_Player
 
 
 class Game:

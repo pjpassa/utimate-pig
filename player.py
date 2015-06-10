@@ -6,6 +6,9 @@ class Player:
     def get_input(self, current_round_score, rolls_so_far):
         return True
 
+    def add_score(self, score):
+        self.score += score
+
 
 class Score_Stop_Player(Player):
 
