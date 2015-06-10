@@ -66,3 +66,4 @@ docs/_build/
 target/
 
 .direnv/
+.idea/

@@ -1,5 +1,4 @@
 import random
-from player import Player
 
 
 class Game:
@@ -27,6 +26,7 @@ class Game:
     def run(self):
         for _ in range(7):
             self.player.add_score(self.turn())
+        return self.report
 
     @property
     def report(self):
